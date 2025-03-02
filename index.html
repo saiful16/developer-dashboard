@@ -71,9 +71,8 @@
                             <div class="rounded-full p-3 bg-white">
                                 <img class="bg-white " src="./assets/calender.png" alt="">
                             </div>
-                            <div>
-                                <p>Wed,</p>
-                                <p class="font-bold text-xl">Jul 28 2025 </p>
+                            <div id="datetime">
+                                <p ></p>
                             </div>
                         </div>
                     </div>
@@ -208,11 +207,14 @@
                         <img src="./assets/activity.png" alt="">
                         <p>Activity Log</p>
                     </div>
-                    <button class="btn bg-blue-600 text-white">Clear History</button>
+                    <button id="clear-history-btn" class="btn bg-blue-600 text-white">Clear History</button>
                 </div>
                 <hr class="border-dashed text-slate-400">
-                <div class="">
-
+                <div id="history-container">
+                    <!-- <div class=" bg-slate-100 m-2 rounded-lg">
+                        <p>You have complete the task <br>
+                        at <time datetime=""></time></p>
+                    </div> -->
                 </div>
             </div>
 
@@ -223,6 +225,7 @@
     <script src="./script/discoverNew.js"></script>
     <script src="./utilities/utilities.js"></script>
     <script src="./script/taskCompletion.js"></script>
+    <script src="./script/historyClean.js"></script>
 </body>
 
 </html>
