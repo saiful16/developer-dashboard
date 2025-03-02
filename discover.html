@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Something New</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/5a8c4f86b6.js" crossorigin="anonymous"></script>
+    <!-- daisy UI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .poppins-regular {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+</head>
+
+<body class="poppins-regular  bg-slate-100 h-screen">
+    <header class="container mx-auto py-4 ">
+        <nav class="flex justify-between bg-white p-3 rounded-2xl">
+            <div class="flex justify-center items-center gap-3">
+                <img class="w-12" src="./assets/logo.png" alt="" srcset="">
+                <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1>
+            </div>
+            <div class=" flex items-center">
+                <button id="back-to-home-page" class="btn bg-blue-600 text-white">Back to DashBoard</button>
+            </div>
+        </nav>
+    </header>
+    <main class="container mx-auto py-4">
+        <h1 class="text-3xl font-bold text-center">Blogs</h1>
+        <!-- question - 01 -->
+        <div class="bg-white rounded-lg p-4 space-y-1 my-4">
+            <h3>Question-1: What are the different ways to select an element in the DOM?</h3>
+            <hr class="border-dashed text-gray-400">
+            <p>There are 5 ways to select an element in DOM. Those ways are:</p>
+            <ol class="list-decimal pl-9">
+                <li>getElementById.</li>
+                <li>getElementsByClassName.</li>
+                <li>getElementsByTagName.</li>
+                <li>querySelector.</li>
+                <li>querySelectorAll.</li>
+            </ol>
+        </div>
+
+        <!-- question - 02 -->
+        <div class="bg-white rounded-lg p-4 space-y-1 my-4">
+            <h3>Question-2: What is the difference between innerHTML, innerText, and textContent ?</h3>
+            <hr class="border-dashed text-gray-400">
+            <p>innerHTML used to get all text and html tag that is contain by the element. where, innerText only returns
+                the text contain by the element and it's child nodes. On the other hand, by textContent also returns all
+                the text including comments</p>
+
+        </div>
+
+        <!-- question - 03 -->
+        <div class="bg-white rounded-lg p-4 space-y-1 my-4">
+            <h3>Question-3: What is event delegation in the DOM?</h3>
+            <hr class="border-dashed text-gray-400">
+            <p>When we add event listener is a childNode, in the time of calling this event it will listen from all of
+                his parents node. To prevent this we use event listener in the parentNode for avoiding adding multiple
+                event listener in the childNode.</p>
+        </div>
+
+        <!-- question - 04 -->
+        <div class="bg-white rounded-lg p-4 space-y-1 my-4">
+            <h3>Question-4: What is event bubbling in the DOM?</h3>
+            <hr class="border-dashed text-gray-400">
+            <p>Event Bubbling is a event propagation methods. its like when we trigger an event from a child node same
+                event will be triggered on its parentNode than if parentNode have any parentNode i will trigger that
+                node also. to stop event propagation we use event delegation methods.</p>
+        </div>
+
+        <!-- question - 05 -->
+        <div class="bg-white rounded-lg p-4 space-y-1 my-4">
+            <h3>Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+            <hr class="border-dashed text-gray-400">
+            <p>Event Bubbling is a event propagation methods. its like when we trigger an event from a child node same
+                event will be triggered on its parentNode than if parentNode have any parentNode i will trigger that
+                node also. to stop event propagation we use event delegation methods.</p>
+        </div>
+    </main>
+
+    <script src="./script/backToMainPage.js"></script>
+</body>
+
+</html>
