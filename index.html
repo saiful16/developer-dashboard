@@ -35,7 +35,7 @@
             <div class="flex justify-center items-center gap-2">
                 <div class="flex justify-center items-center gap-4 bg-slate-100 rounded-3xl p-3">
                     <i class="fa-solid fa-square-check text-3xl" style="color: #3752fd;"></i>
-                    <p class="text-2xl font-bold">23</p>
+                    <p id="completed-tasks" class="text-2xl font-bold">23</p>
                 </div>
                 <div id="background-controller">
                     <img class="p-2 bg-slate-100 rounded-full" src="./assets/theme-btn.png" alt="">
@@ -55,14 +55,14 @@
                             style="color: #3752fd;"></i>
                         <div>
                             <p class="text-gray-500">Task Assigned</p>
-                            <h3 class="font-bold text-2xl">05</h3>
+                            <h3 id="assigned-tasks" class="font-bold text-2xl">06</h3>
                         </div>
                     </div>
                     <!-- discover new section -->
                     <div id="discover-new" class="w-2/4 grow-7 bg-gradient-to-r from-blue-700 to-blue-300 rounded-lg cursor-pointer">
-                        <div class="flex justify-center items-center   p-2">
+                        <div class="flex justify-around items-center text-white  p-2">
                             <img src="./assets/board.png" alt="" srcset="">
-                            <h1>Discover Something <br> New Today!</h1>
+                            <h1 class="text-2xl">Discover Something <br> New Today!</h1>
                         </div>
                     </div>
                     <!-- date and time section -->
@@ -98,14 +98,14 @@
                                 <p class="text-sm text-gray-500">Deadline</p>
                                 <p class="font-semibold">21 March 2025</p>
                             </div>
-                            <button class="btn  bg-blue-600 text-white">Completed</button>
+                            <button class="task-complete-btn btn  bg-blue-600 text-white">Completed</button>
                         </div>
                     </div>
 
                     <!-- card-2 -->
                     <div class= " card bg-slate-100 rounded-lg p-2 space-y-3">
                         <p class="bg-white text-gray-400 w-24 text-center rounded-lg p-1">CloudSync</p>
-                        <h2 class="text-2xl font-medium">Add Dark Mode</h2>
+                        <h2 class="text-2xl font-medium">Add Dark Mode to DashBoard</h2>
                         <article class="">
                             <p class="bg-white rounded-lg p-1 text-gray-500 ">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                                 and ensure onClick works properly</p>
@@ -115,7 +115,7 @@
                                 <p class="text-sm text-gray-500">Deadline</p>
                                 <p class="font-semibold">21 March 2025</p>
                             </div>
-                            <button class="btn  bg-blue-600 text-white">Completed</button>
+                            <button class="task-complete-btn btn  bg-blue-600 text-white">Completed</button>
                         </div>
                     </div>
 
@@ -133,7 +133,7 @@
                                 <p class="text-sm text-gray-500">Deadline</p>
                                 <p class="font-semibold">21 March 2025</p>
                             </div>
-                            <button class="btn  bg-blue-600 text-white">Completed</button>
+                            <button class="task-complete-btn btn  bg-blue-600 text-white">Completed</button>
                         </div>
                     </div>
 
@@ -154,7 +154,7 @@
                                 <p class="text-sm text-gray-500">Deadline</p>
                                 <p class="font-semibold">21 March 2025</p>
                             </div>
-                            <button class="btn  bg-blue-600 text-white">Completed</button>
+                            <button class="task-complete-btn btn  bg-blue-600 text-white">Completed</button>
                         </div>
                     </div>
 
@@ -175,7 +175,7 @@
                                 <p class="text-sm text-gray-500">Deadline</p>
                                 <p class="font-semibold">21 March 2025</p>
                             </div>
-                            <button class="btn  bg-blue-600 text-white">Completed</button>
+                            <button class="task-complete-btn btn  bg-blue-600 text-white">Completed</button>
                         </div>
                     </div>
 
@@ -196,7 +196,7 @@
                                 <p class="text-sm text-gray-500">Deadline</p>
                                 <p class="font-semibold">21 March 2025</p>
                             </div>
-                            <button class="btn  bg-blue-600 text-white">Completed</button>
+                            <button class="task-complete-btn btn  bg-blue-600 text-white">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -221,6 +221,7 @@
 
     <script src="./script/backgroundController.js"></script>
     <script src="./script/discoverNew.js"></script>
+    <script src="./utilities/utilities.js"></script>
     <script src="./script/taskCompletion.js"></script>
 </body>
 
