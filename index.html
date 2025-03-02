@@ -25,7 +25,7 @@
     </style>
 </head>
 
-<body class="poppins-regular bg-slate-100 h-screen">
+<body class="poppins-regular bg-slate-100 p-2">
     <header class="container mx-auto py-4 ">
         <nav class="flex justify-between bg-white p-3 rounded-2xl">
             <div class="flex justify-center items-center gap-3">
@@ -44,29 +44,29 @@
         </nav>
     </header>
     <main class="container mx-auto  rounded-lg">
-        <section class="flex gap-3 ">
+        <section class="flex flex-col lg:flex-row gap-3 ">
             <!-- main board section -->
-            <div class="w-3/4 bg-white rounded-lg p-2">
+            <div class="w-full lg:w-3/4 bg-white rounded-lg p-2">
                 <!-- task count and date section -->
-                <div class="flex m-2 gap-2">
+                <div class="flex flex-col lg:flex-row m-2 gap-2">
                     <!-- task assigned section -->
-                    <div class="flex grow-3  gap-3 justify-center items-center bg-slate-100 p-2 rounded-lg ">
+                    <div class="flex  lg:grow-3  gap-3 justify-center items-center bg-slate-100 p-2 rounded-lg ">
                         <i class="fa-solid fa-square-check text-3xl bg-white p-3 rounded-full"
                             style="color: #3752fd;"></i>
                         <div>
                             <p class="text-gray-500">Task Assigned</p>
-                            <h3 id="assigned-tasks" class="font-bold text-2xl">06</h3>
+                            <h3 id="assigned-tasks" class="font-bold text-2xl">09</h3>
                         </div>
                     </div>
                     <!-- discover new section -->
-                    <div id="discover-new" class="w-2/4 grow-7 bg-gradient-to-r from-blue-700 to-blue-300 rounded-lg cursor-pointer">
+                    <div id="discover-new" class=" lg:grow-7 bg-gradient-to-r from-blue-700 to-blue-300 rounded-lg cursor-pointer">
                         <div class="flex justify-around items-center text-white  p-2">
                             <img src="./assets/board.png" alt="" srcset="">
                             <h1 class="text-2xl">Discover Something <br> New Today!</h1>
                         </div>
                     </div>
                     <!-- date and time section -->
-                    <div class="grow-3 bg-slate-100 rounded-lg flex">
+                    <div class="grow-3 bg-slate-100 rounded-lg flex justify-center">
                         <div class="flex justify-center items-center p-2 gap-2">
                             <div class="rounded-full p-3 bg-white">
                                 <img class="bg-white " src="./assets/calender.png" alt="">
@@ -79,7 +79,7 @@
                 </div>
                 <hr class="border-dashed text-slate-400">
                 <!-- task list section -->
-                <div class="m-2 grid grid-cols-3 gap-4 ">
+                <div class="m-2 grid grid-cols-1 lg:grid-cols-3 gap-4 ">
                     <!-- card-1 -->
                     <div class="card bg-slate-100 rounded-lg p-2 space-y-3">
                         <p class="bg-white text-gray-400 w-24 text-center rounded-lg p-1">ShopEase</p>
@@ -198,10 +198,73 @@
                             <button class="task-complete-btn btn  bg-blue-600 text-white">Completed</button>
                         </div>
                     </div>
+
+                    <!-- card-7 -->
+                    <div class="card bg-slate-100 rounded-lg p-2 space-y-3">
+                        <p class="bg-white text-gray-400 w-24 text-center rounded-lg p-1">Spotify</p>
+                        <h2 class="task-title text-2xl font-medium">AI Song Recommendation</h2>
+                        <article class="">
+                            <p class="bg-white rounded-lg p-1 text-gray-500 text-wrap
+                            overflow-hidden text-ellipsis">Debug using Chrome  DevTools, check for
+
+                                overlapping elements,<br> and ensure onClick works
+                                properly
+                                and ensure onClick works properly</p>
+                        </article>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-sm text-gray-500">Deadline</p>
+                                <p class="font-semibold">21 March 2025</p>
+                            </div>
+                            <button class="task-complete-btn btn  bg-blue-600 text-white">Completed</button>
+                        </div>
+                    </div>
+
+                    <!-- card-8 -->
+                    <div class="card bg-slate-100 rounded-lg p-2 space-y-3">
+                        <p class="bg-white text-gray-400 w-24 text-center rounded-lg p-1">Uni Dhaka</p>
+                        <h2 class="task-title text-2xl font-medium">Student Database issue</h2>
+                        <article class="">
+                            <p class="bg-white rounded-lg p-1 text-gray-500 text-wrap
+                            overflow-hidden text-ellipsis">Debug using Chrome  DevTools, check for
+
+                                overlapping elements,<br> and ensure onClick works
+                                properly
+                                and ensure onClick works properly</p>
+                        </article>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-sm text-gray-500">Deadline</p>
+                                <p class="font-semibold">21 March 2025</p>
+                            </div>
+                            <button class="task-complete-btn btn  bg-blue-600 text-white">Completed</button>
+                        </div>
+                    </div>
+
+                    <!-- card-9 -->
+                    <div class="card bg-slate-100 rounded-lg p-2 space-y-3">
+                        <p class="bg-white text-gray-400 w-24 text-center rounded-lg p-1">WebCloud</p>
+                        <h2 class="task-title text-2xl font-medium">Page loading  delay</h2>
+                        <article class="">
+                            <p class="bg-white rounded-lg p-1 text-gray-500 text-wrap
+                            overflow-hidden text-ellipsis">Debug using Chrome  DevTools, check for
+
+                                overlapping elements,<br> and ensure onClick works
+                                properly
+                                and ensure onClick works properly</p>
+                        </article>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-sm text-gray-500">Deadline</p>
+                                <p class="font-semibold">21 March 2025</p>
+                            </div>
+                            <button class="task-complete-btn btn  bg-blue-600 text-white">Completed</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- activity log section -->
-            <div class="w-1/4 text-center bg-white rounded-lg">
+            <div class="w-full lg:w-1/4 text-center bg-white rounded-lg">
                 <div class="p-3">
                     <div class="flex justify-center items-center gap-3 space-y-2 pt-3">
                         <img src="./assets/activity.png" alt="">
@@ -211,10 +274,7 @@
                 </div>
                 <hr class="border-dashed text-slate-400">
                 <div id="history-container">
-                    <!-- <div class=" bg-slate-100 m-2 rounded-lg">
-                        <p>You have complete the task <br>
-                        at <time datetime=""></time></p>
-                    </div> -->
+
                 </div>
             </div>
 
